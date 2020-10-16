@@ -17,6 +17,9 @@
       <change afterPath="$PROJECT_DIR$/Basic_Package/Package_1/package_1.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Basic_Package/Package_2/package_2.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Basic_Package/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Type/arr_slice_map.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Type/pointer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Type/struct.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Flow_Control/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,5 +82,13 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="353" y="231" key="#Notifications/0.0.1280.800@0.0.1280.800" timestamp="1602870235061" />
+    <state x="100" y="100" width="1080" height="600" key="dock-window-1" timestamp="1602874792936">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="dock-window-1/0.23.1280.746@0.23.1280.746" timestamp="1602874792936" />
+    <state x="100" y="100" width="1080" height="600" key="dock-window-2" timestamp="1602874792937">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="100" y="100" width="1080" height="600" key="dock-window-2/0.23.1280.746@0.23.1280.746" timestamp="1602874792937" />
   </component>
 </project>
