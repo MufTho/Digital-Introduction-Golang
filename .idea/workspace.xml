@@ -18,6 +18,7 @@
       <change afterPath="$PROJECT_DIR$/Basic_Package/Package_2/package_2.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Basic_Package/main.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Data_Type/arr_slice_map.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Type/method.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Data_Type/pointer.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Data_Type/struct.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Flow_Control/main.go" afterDir="false" />
