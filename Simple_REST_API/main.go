@@ -23,12 +23,13 @@ type Hasil struct {
 func main()  {
 	router := mux.NewRouter()
 	router.HandleFunc("/api/hitung-luas", Luas)
+	log.Fatal(http.ListenAndServe(":8080", router))
 }
 
 func Luas(w http.ResponseWriter, r *http.Request)  {
 	var sisi Sisi
 
-	// proses read method http
+	// proses deteksi method http
 	if r.Method != "POST"{
 		WarpAPIError(w, r, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
 		return
@@ -42,7 +43,7 @@ func Luas(w http.ResponseWriter, r *http.Request)  {
 	}
 	//	Proses unmasrsal body input string
 	err = json.Unmarshal(body, &sisi); if err != nil{
-		WarpAPIError(w, r, "Cant read Body", http.StatusInternalServerError)
+		WarpAPIError(w, r, "Error unmarshal : "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -59,7 +60,7 @@ func (s *Sisi) RumusLuas() int {
 func WarpAPIError(w http.ResponseWriter, r *http.Request, message string, code int)  {
 	w.Header().Set("Conten-Type", "application/json")
 	w.WriteHeader(code)
-	result, err := json.Marshal(map[string]interface{}{
+	result,err := json.Marshal(map[string]interface{}{
 		"code":code,
 		"error_type":http.StatusText(code),
 		"error_detail":message,
@@ -73,7 +74,7 @@ func WarpAPIError(w http.ResponseWriter, r *http.Request, message string, code i
 func WarpAPIData(w http.ResponseWriter, r *http.Request, data interface{},message string, code int)  {
 	w.Header().Set("Conten-Type", "application/json")
 	w.WriteHeader(code)
-	result, err := json.Marshal(map[string]interface{}{
+	result,err := json.Marshal(map[string]interface{}{
 		"code":code,
 		"status":message,
 		"data":data,
